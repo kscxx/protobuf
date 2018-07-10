@@ -7,10 +7,10 @@
 // https://developers.google.com/protocol-buffers/docs/tutorials
 
 // [START declaration]
-syntax = "proto3";
-package tutorial;
+syntax = "proto3";  // 表明使用的protoc版本为v3（最新版本）
+package tutorial;  // 包名，用来防止命名冲突
 
-import "google/protobuf/timestamp.proto";
+import "google/protobuf/timestamp.proto";  // 引入外部文件中的定义，此处可能有坑！
 // [END declaration]
 
 // [START java_declaration]
